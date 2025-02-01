@@ -16,6 +16,17 @@ const Contact = () => {
                 <p className={styles.locationText}>
                     63100 Ascoli Piceno, Provincia Ascoli Piceno, Italia
                 </p>
+                <div className={styles.infoContainer}>
+                    <p>
+                        <a href="tel:+39 0736 654770" className={styles.phoneLink}>+39 0736 654770</a>
+                    </p>
+                    {'|'}
+                    <p>
+                        <a href="mailto:contact@ziberline.ro" className={styles.emailLink}>
+                            contact@romarket.ro
+                        </a>
+                    </p>
+                </div>
                 <FaArrowDown />
                 <div className={styles.mapWrapper}>
                     <Map

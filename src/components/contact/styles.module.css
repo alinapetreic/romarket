@@ -18,7 +18,18 @@
     text-align: center;
 }
 
+.infoContainer {
+    display: flex;
+    gap: 4px;
+}
+
+.infoContainer a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
 @keyframes bounce {
+
     0%,
     100% {
         transform: translateY(-10px);

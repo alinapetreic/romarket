@@ -87,13 +87,13 @@ const Navbar = () => {
                     ))}
                 </ul>
                 <div className={`${styles.actionsContainer} ${isOpen ? styles.active : ''}`}>
-                    <Link
-                        to='/contact'
+                    <a 
+                        href='#contact'
                         className={styles.contactLink}
                         onClick={handleContactButtonClick}
                     >
                         Contactează-ne
-                    </Link>
+                    </a>
                 </div>
                 <button
                     className={styles.hamburger}

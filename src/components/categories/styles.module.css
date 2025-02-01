@@ -18,18 +18,29 @@
     color: rgb(11, 13, 23);
 }
 
+.carouselWrapper {
+    position: relative;
+    width: 100%;
+    padding: 0 6rem;
+}
+
 .carouselContainer {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2.5rem;
+    width: 100%;
+    overflow: hidden;
 }
 
 .cardsContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+    width: 100%;
+    transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+    will-change: transform, opacity;
 }
 
 .card {
@@ -42,6 +53,8 @@
     padding: 2rem;
     gap: 1.5rem;
     height: 15rem;
+    opacity: 1;
+    will-change: transform, opacity;
 }
 
 .card:hover {
@@ -74,19 +87,24 @@
     padding: 0.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
 }
 
-.navigationButton:hover {
+.navigationButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.navigationButton:not(:disabled):hover {
     background-color: #f3f4f6;
 }
 
 .prevButton {
-    left: -6rem;
+    left: 0;
 }
 
 .nextButton {
-    right: -6rem;
+    right: 0;
 }
 
 .dotsContainer {
@@ -102,7 +120,11 @@
     background-color: #d1d5db;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.dot:disabled {
+    cursor: not-allowed;
 }
 
 .dotActive {
@@ -110,7 +132,12 @@
 }
 
 @media (max-width: 1600px) {
-    .prevButton, .nextButton {
+    .carouselWrapper {
+        padding: 0;
+    }
+
+    .prevButton,
+    .nextButton {
         display: none;
     }
 }

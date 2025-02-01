@@ -17,12 +17,12 @@ const Article = (props: ArticleProps) => {
     }
 
     return (
-        <article className={styles.article}>
+        <article className={styles.article} onClick={toggleOpen}>
             <div className={styles.container}>
                 <p className={styles.question}>
                     {question}
                 </p>
-                <button className={styles.iconButton} onClick={toggleOpen}>
+                <button className={styles.iconButton} >
                     {isOpen ? <FaChevronUp /> : <FaChevronDown />}
                 </button>
             </div>
