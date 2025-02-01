@@ -1,0 +1,159 @@
+.sectionWrapper {
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    justify-content: center;
+}
+
+.section {
+    width: 1280px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 64px 40px;
+    gap: 40px;
+}
+
+.section h2 {
+    font-size: 48px;
+    color: rgb(11, 13, 23);
+}
+
+.carouselContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+    height: 15rem;
+}
+
+.card:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 24px;
+}
+
+.card p {
+    line-height: 2rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    text-align: justify;
+}
+
+.navigationButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: none;
+    border-radius: 50%;
+    padding: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navigationButton:hover {
+    background-color: #f3f4f6;
+}
+
+.prevButton {
+    left: -6rem;
+}
+
+.nextButton {
+    right: -6rem;
+}
+
+.dotsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background-color: #d1d5db;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dotActive {
+    background-color: var(--primary-color);
+}
+
+@media (max-width: 1600px) {
+    .prevButton, .nextButton {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .section {
+        padding: 48px 20px;
+        gap: 40px;
+    }
+
+    .section h2 {
+        font-size: 32px;
+    }
+
+    .cardsContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        padding: 1.5rem;
+        height: 13rem;
+    }
+
+    .card h3 {
+        font-size: 20px;
+    }
+
+    .card p {
+        line-height: 1.75rem;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        text-align: initial;
+    }
+}
+
+@media (max-width: 768px) {
+    .cardsContainer {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .section h2 {
+        font-size: 24px;
+    }
+}

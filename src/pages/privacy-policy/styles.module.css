@@ -1,0 +1,36 @@
+.main {
+    padding-top: 75px;
+}
+
+.sectionWrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.section {
+    width: 1280px;
+    padding: 64px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.breadcrumb {
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 32px;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: justify;
+}
+
+.textContainer p {
+    line-height: 1.5rem;
+}

@@ -1,0 +1,80 @@
+.container {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 2;
+    padding: 14px 30px 18px 20px;
+    border-radius: 4px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container.success {
+    background-color: var(--success-color);
+}
+
+.container.error {
+    background-color: var(--error-color);
+}
+
+.container p {
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+.container button {
+    border: none;
+    background: none;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    color: #fff;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+.container button:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.progressBar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    animation: shrink 5s linear forwards;
+}
+
+.progressBar.success {
+    background-color: #00f608;
+}
+
+.progressBar.error {
+    background-color: #c70f02;
+}
+
+@keyframes shrink {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        width: calc(100% - 32px);
+        max-width: 100%;
+    }
+}

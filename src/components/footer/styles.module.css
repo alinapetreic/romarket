@@ -1,0 +1,193 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-top: 1px solid rgb(230, 230, 230);
+}
+
+.section {
+    width: 1280px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 32px 40px;
+}
+
+.socialContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.socialContainer p {
+    color: rgb(11, 13, 23);
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -.004em;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logoContainer img {
+    width: 64px;
+    height: 48px;
+}
+
+.iconsContainer {
+    display: flex;
+    gap: 16px;
+}
+
+.iconsContainer svg {
+    color: rgb(11, 13, 23);
+    font-size: 32px;
+}
+
+.copyright {
+    color: rgb(11, 13, 23);
+    font-size: .75rem;
+    line-height: 1.5rem;
+    letter-spacing: -.004em;
+}
+
+.newsletterContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.newsletterContainer p {
+    color: rgb(11, 13, 23);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -.004em;
+}
+
+.newsletterContainer form input {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 16px;
+    border: 1px solid rgb(11, 13, 23);
+}
+
+.newsletterContainer span {
+    color: rgb(11, 13, 23);
+    font-size: 11px;
+    line-height: 24px;
+}
+
+.newsletterContainer button {
+    width: 100px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 12px 0;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contactUsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contactUsContainer p {
+    color: rgb(11, 13, 23);
+    line-height: 32px;
+    letter-spacing: -.004em;
+}
+
+.contactUsText {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.phoneLink {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.emailLink {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.privacyPolicyLink {
+    color: rgb(11, 13, 23);
+}
+
+.scrollUpButton {
+    position: absolute;
+    top: 0;
+    right: 100px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: var(--dark-blue-color);
+}
+
+.scrollUpButton span {
+    writing-mode: vertical-rl;
+    text-transform: uppercase;
+    font-size: .75rem;
+    line-height: .75rem;
+    letter-spacing: .2em;
+}
+
+.scrollUpButton div {
+    background-color: var(--dark-blue-color);
+    width: 2px;
+    height: 100px;
+}
+
+.scrollUpButton svg {
+    font-size: 13px;
+    transition: transform 0.5s ease;
+}
+
+.scrollUpButton:hover svg {
+    transform: translateY(8px);
+}
+
+@media (max-width: 1600px) {
+    .scrollUpButton {
+        display: none;
+    }
+}
+
+@media (max-width: 1280px) {}
+
+@media (max-width: 992px) {
+    .section {
+        gap: 20px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        grid-template-columns: 1fr;
+    }
+
+    .section > div:not(:first-of-type) {
+        border-top: 1px solid rgb(230, 230, 230);
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {}

@@ -1,0 +1,62 @@
+.sectionWrapper {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+}
+
+.section {
+    width: 1280px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 64px 40px;
+    gap: 40px;
+}
+
+.section h2 {
+    font-size: 48px;
+    color: #fff;
+}
+
+.section p {
+    color: #fff;
+    max-width: 672px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 32px;
+    font-size: 20px;
+}
+
+.contactLink {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px 36px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    .section {
+        padding: 48px 20px;
+        gap: 40px;
+    }
+
+    .section h2 {
+        font-size: 32px;
+    }
+
+    .section p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .contactLink {
+        font-size: 16px;
+        padding: 16px 32px;
+    }
+}

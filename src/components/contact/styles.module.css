@@ -1,0 +1,78 @@
+.sectionWrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: #fff;
+}
+
+.section {
+    width: 1280px;
+    padding: 56px 40px 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.locationText {
+    text-align: center;
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+.section svg {
+    font-size: 2rem;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+.mapWrapper {
+    width: 100%;
+    height: 600px;
+}
+
+@media (max-width: 992px) {
+    .section {
+        padding: 48px 20px;
+    }
+
+    .mapWrapper {
+        height: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contactSection {
+        padding: 36px 20px;
+    }
+
+    .section {
+        padding: 36px 20px;
+    }
+
+    .mapWrapper {
+        height: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .inputsContainer {
+        flex-direction: column;
+    }
+
+    .section svg {
+        font-size: 1.5rem;
+    }
+
+    .mapWrapper {
+        height: 300px;
+    }
+}

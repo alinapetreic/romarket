@@ -1,0 +1,40 @@
+.article {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    gap: 24px;
+    width: 100%;
+}
+
+.article:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.question {
+    color: rgb(11, 13, 23);
+    font-weight: 700;
+}
+
+.iconButton {
+    color: rgb(11, 13, 23);
+    font-size: 14px;
+    border: none;
+    background: none;
+}
+
+.iconButton:hover {
+    cursor: pointer;
+}
+
+.answer {
+    color: rgb(71, 77, 92);
+}

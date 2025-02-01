@@ -1,0 +1,51 @@
+.sectionWrapper {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+}
+
+.section {
+    width: 1280px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 64px 40px;
+    gap: 32px;
+}
+
+.section h2 {
+    color: #fff;
+    font-size: 48px;
+    max-width: 896px;
+    text-align: center;
+}
+
+.section p {
+    color: #fff;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.section img {
+    object-fit: cover;
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    .section {
+        padding: 48px 20px;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section h2 {
+        font-size: 24px;
+    }
+}

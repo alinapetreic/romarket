@@ -1,0 +1,148 @@
+.header {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.navbar {
+    width: 1280px;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.logoLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+}
+
+.logoLink img {
+    width: 48px;
+    height: 32px;
+}
+
+.linksContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.linksContainer li button {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-color);
+    background: none;
+    border: none;
+}
+
+.linksContainer li button:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.actionsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactLink {
+    border: 2px solid var(--primary-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: all 0.3s;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.contactLink:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.hamburger svg {
+    font-size: 24px;
+}
+
+@media (max-width: 1600px) {}
+
+@media (max-width: 1280px) {}
+
+@media (max-width: 992px) {
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .linksContainer {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: #fff;
+        padding: 20px 20px 8px 20px;
+        border-bottom: 1px solid rgb(236, 236, 236);
+        gap: 8px;
+    }
+
+    .linksContainer.active {
+        display: flex;
+    }
+
+    .linksContainer li {
+        height: 24px;
+    }
+
+    .actionsContainer {
+        display: none;
+        position: absolute;
+        top: calc(75px + (8px * 3) + (24px * 4) + (20px + 8px));
+        left: 0;
+        width: 100%;
+        padding: 8px 20px 20px 20px;
+        background: #fff;
+        border-bottom: 1px solid rgb(236, 236, 236);
+    }
+
+    .actionsContainer.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 480px) {}
