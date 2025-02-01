@@ -8,7 +8,7 @@ const faq = [
     },
     {
         "question": "Unde este situat magazinul RoMarket în Ascoli?",
-        "answer": "Magazinul nostru este situat în [adresa exactă din Ascoli], într-o zonă ușor accesibilă cu transportul public și cu locuri de parcare disponibile."
+        "answer": "Magazinul nostru este situat pe strada Via Napoli 118B, într-o zonă ușor accesibilă cu transportul public și cu locuri de parcare disponibile."
     },
     {
         "question": "Acceptați plata cu cardul?",
